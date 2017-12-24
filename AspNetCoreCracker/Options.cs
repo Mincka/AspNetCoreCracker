@@ -6,11 +6,11 @@ namespace AspNetCoreCracker
 {
     class Options
     {
-        [Option('h', "hashes", Required = true,
+        [Option("hashes", Required = true,
             HelpText = "The path to a file with a list of hashes to crack.")]
         public string HashFile { get; set; }
 
-        [Option('p', "passwords", Required = true,
+        [Option("passwords", Required = true,
             HelpText = "The path to a file with a list of passwords to hash.")]
         public string PasswordFile { get; set; }
 

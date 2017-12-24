@@ -15,7 +15,7 @@ namespace AspNetCoreCracker
         public static HashComponents ExtractHashComponents(byte[] hashBytes)
         {
             var metadata = new HashComponents();
-            metadata.CompatibilityMode = ExtractCompatiblityMode(hashBytes);
+            metadata.CompatibilityMode = ExtractCompatibilityMode(hashBytes);
             metadata.Prf = ExtractPrf(hashBytes);
             metadata.IterationCount = ExtractIterationCount(hashBytes);
             metadata.SaltLength = ExtractSaltLength(hashBytes);
@@ -26,9 +26,9 @@ namespace AspNetCoreCracker
             return metadata;
         }
 
-        public static PasswordHasherCompatibilityMode ExtractCompatiblityMode(byte[] hashBytes)
+        public static PasswordHasherCompatibilityMode ExtractCompatibilityMode(byte[] hashBytes)
         {
-            // We extract the compatiblity mode from the hash
+            // We extract the compatibility mode from the hash
             switch (hashBytes[0])
             {
                 case 0x00:
