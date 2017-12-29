@@ -51,15 +51,20 @@ Time taken to test 203 passwords for this hash: 480ms (~ 422 computations per se
 Total time taken: 483ms
 ```
 
+## How to improve?
+You can either increase the number of iterations or use another hashing algorithm (cf. links below).
+
 ## Resources
 * https://github.com/aspnet/Identity/blob/dev/src/Microsoft.Extensions.Identity.Core/PasswordHasher.cs
 * https://andrewlock.net/exploring-the-asp-net-core-identity-passwordhasher/
+* https://andrewlock.net/migrating-passwords-in-asp-net-core-identity-with-a-custom-passwordhasher/
+* http://www.blinkingcaret.com/2017/11/29/asp-net-identity-passwordhash/
 
 ## Licence
 
 MIT License
 
-Copyright (c) 2017 Julien EHRHART
+Copyright (c) 2017-2018 Julien EHRHART
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
