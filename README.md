@@ -60,7 +60,7 @@ You can either increase the number of iterations or use another hashing algorith
 * https://andrewlock.net/migrating-passwords-in-asp-net-core-identity-with-a-custom-passwordhasher/
 * http://www.blinkingcaret.com/2017/11/29/asp-net-identity-passwordhash/
 
-## Licence
+## License
 
 MIT License
 
