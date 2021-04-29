@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: Microsoft.AspNetCore.Cryptography.Internal
+    versions:
+    - 5.0.3
+  - dependency-name: Microsoft.AspNetCore.Cryptography.KeyDerivation
+    versions:
+    - 5.0.3
