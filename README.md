@@ -40,6 +40,12 @@ Attempt to crack a list of hashes:
 
 Tested on Windows 10 x64 and Ubuntu 16.04 x64.
 
+## GitHub Codespace
+```
+/workspaces/AspNetCoreCracker (master) $ dotnet publish -c Release
+/workspaces/AspNetCoreCracker (master) $ ./AspNetCoreCracker/bin/Release/netcoreapp3.1/publish/AspNetCoreCracker
+```
+
 ## Run
 `dotnet run --hashes hashes.txt --passwords passwords.txt`
 
